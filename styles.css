@@ -68,9 +68,17 @@ button {
 }
 
 .decoder {
-    border: none;
+    border: 2px solid transparent;
     background-color: #f3f5fc;
-    height:calc(100vh - 325px) 
+    color: #0A3871;
+    height:calc(100vh - 325px);
+    resize: none;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.decoder::placeholder{
+    color: #0A3871;
 }
 
 .warning {
