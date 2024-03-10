@@ -66,13 +66,6 @@ function encrypter(text){
             copy.style.display = "inline-block";
         }
     }
-    else {
-        firstCrypt = true;
-        result.style.display = "none";
-        warnings.style.display = "block";
-        image.style.display = "block";
-        copy.style.display = "none";
-    }
 }
 
 function decrypter(text){

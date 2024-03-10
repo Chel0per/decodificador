@@ -152,7 +152,7 @@ button {
 
 .modal {
     visibility: hidden;
-    position:absolute;
+    position:fixed;
     top: 40px;
     left: calc(50vw - 100px);
     z-index: 2;
@@ -187,3 +187,129 @@ button {
         align-self: center;
     }
 }
+
+@media (max-width: 1088px) {
+
+    .screen {
+        gap:60px
+    }
+
+    .input {
+        width: calc(100vw - 690px);
+    }
+
+    .logo {
+        width:90px;
+    }
+}
+
+@media (max-width: 998px) {
+
+    .screen {
+        gap:40px
+    }
+
+    .input {
+        width: calc(100vw - 620px);
+    }
+
+    .logo {
+        width:60px;
+    }
+}
+
+@media (max-width: 948px) {
+
+    .screen {
+        flex-direction: column;
+        gap:64px;
+    }
+
+    .input {
+        width: auto;
+        height: 600px;
+    }
+
+    .logo {
+        width:auto;
+        justify-content: start;
+    }
+
+    .decoder {
+        height: 580px;
+    }
+
+    .spacer {
+        height: 88px;
+    }
+
+    .warning {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .result {
+        width:auto;
+        height: auto;
+    }
+
+    .result_message {
+        height:auto;
+    }
+
+    .no_message_image {
+        display: none;
+    }
+
+    .copy {
+        width: calc(100vw - 144px);
+    }
+}
+
+@media (max-width: 752px) {
+
+    .buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .warning {
+        width: auto;
+        align-self: center;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .screen {
+        padding: 16px;
+    }
+
+    .result {
+        width: calc(100vw - 47px);
+        align-self: center;
+    }
+
+    .spacer {
+        height: 8px;
+    }
+
+    .decoder {
+        min-height: 283px;
+        height: auto;
+        max-height: none;
+    }
+
+    .copy {
+        width: calc(100vw - 96px)
+    }
+}
+
